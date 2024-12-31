@@ -1,0 +1,2 @@
+[template]
+sub_templates = ["start-actix", "start-axum", "start-trunk"]
