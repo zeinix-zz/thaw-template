@@ -6,12 +6,14 @@ This template requires you to have `cargo-generate`installed. You can install th
 
 ```sh
 cargo install cargo-generate
+# or
+cargo binstall cargo-generate
 ```
 
 To set up your project with this template, run
 
 ```sh
-cargo generate --auto-path thaw-ui/thaw-template
+cargo generate thaw-ui/thaw-template
 ```
 
 to generate your new project, then

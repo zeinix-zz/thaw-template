@@ -41,13 +41,15 @@ pub fn App() -> impl IntoView {
         <Title text="Welcome to Leptos"/>
 
         // content for this welcome page
-        <Router>
-            <main>
-                <Routes fallback=|| "Page not found.".into_view()>
-                    <Route path=StaticSegment("") view=HomePage/>
-                </Routes>
-            </main>
-        </Router>
+        <ConfigProvider>
+            <Router>
+                <main>
+                    <Routes fallback=|| "Page not found.".into_view()>
+                        <Route path=StaticSegment("") view=HomePage/>
+                    </Routes>
+                </main>
+            </Router>
+        </ConfigProvider>
     }
 }
 
