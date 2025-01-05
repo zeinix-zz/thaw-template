@@ -31,6 +31,8 @@ async fn main() -> std::io::Result<()> {
             .leptos_routes(routes, {
                 let leptos_options = leptos_options.clone();
                 move || {
+                    let leptos_options = leptos_options.clone();
+                    
                     view! {
                         <SSRMountStyleProvider>
                             <!DOCTYPE html>
